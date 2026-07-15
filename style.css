@@ -1,0 +1,92 @@
+.commonMargin {
+    margin: 60px 5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.menu li:hover {
+    /* background: #ebfbff; */
+    border-radius: 5px;
+    text-decoration: underline;
+    padding: 0 4px;
+}
+
+.navbar {
+    position: relative;
+    z-index: 20;
+}
+
+.rectangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    height: 550px;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 530px;
+}
+
+.bannerSection {
+    position: relative;
+    z-index: 10;
+    /* height: 300px; */
+}
+
+.bannerText {
+    width: 100%;
+}
+
+.bannerImg {
+    /* position: absolute; */
+    z-index: 11;
+    width: 100%;
+}
+
+.bannerImg img {
+    /* position: absolute; */
+    /* height: 300px; */
+    /* width: 100%; */
+    z-index: 12;
+}
+
+.caseStudiesImg {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "one two"
+    "one three"
+    "four five"
+    ;
+}
+
+.box01 {
+    grid-area: one;
+}
+.box02 {
+    grid-area: two;
+}
+.box03 {
+    grid-area: three;
+}
+.box04 {
+    grid-area: four;
+}
+.box05 {
+    grid-area: five;
+}
+
+.caseStudiesImg div img {
+    border-radius: 10px;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
